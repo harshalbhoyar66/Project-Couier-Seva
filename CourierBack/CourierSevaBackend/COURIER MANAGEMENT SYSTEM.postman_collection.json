@@ -1,0 +1,760 @@
+{
+	"info": {
+		"_postman_id": "ba56d82d-a492-4470-b3e7-2c63192c59ee",
+		"name": "COURIER MANAGEMENT SYSTEM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19508727"
+	},
+	"item": [
+		{
+			"name": "HELPER MODULE",
+			"item": [
+				{
+					"name": "FETCH USER ROLES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/helper/user/role/fetch/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"helper",
+								"user",
+								"role",
+								"fetch",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH DELIVERY TIME",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/helper/delivery/time/fetch/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"helper",
+								"delivery",
+								"time",
+								"fetch",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH ALL DELIVERY STATUS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/helper/delivery/status/fetch/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"helper",
+								"delivery",
+								"status",
+								"fetch",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH ALL COURIER TYPES",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/helper/courier/type/fetch/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"helper",
+								"courier",
+								"type",
+								"fetch",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH SALARY RANGE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/helper/job/salary/range/fetch/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"helper",
+								"job",
+								"salary",
+								"range",
+								"fetch",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "USER MODULE",
+			"item": [
+				{
+					"name": "ADMIN LOGIN",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"emailId\": \"demo.admin@demo.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COURIER LOGIN",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"emailId\": \"murad@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"Courier\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CUSTOMER LOGIN",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"emailId\": \"jafer@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"Customer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELIVERY PERSOn LOGIN",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"emailId\": \"addeya@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"role\": \"Delivery\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ADMIN REGISTER",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJkZW1vLmFkbWluQGRlbW8uY29tIiwiaWF0IjoxNjk5Mzc4MjE1LCJleHAiOjE2OTkzODAwMTV9.yj0SQAx7XDCDRiSKU9aD6RsotGSc5h1NGYxS81hVgZE",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"emailId\": \"demo.admin2@demo.com\",\r\n  \"password\": \"123456\",\r\n  \"role\":\"Admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/admin/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"admin",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "COURIER REGISTER",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Murad\",\r\n  \"lastName\": \"Ali\",\r\n  \"emailId\": \"murad@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"phoneNo\": \"1234567890\",\r\n  \"role\": \"Courier\",\r\n  \"street\": \"Bhandup\",\r\n  \"landmark\": \"Dreams Mall\",\r\n  \"city\": \"Mumbai\",\r\n  \"pincode\": \"123456\",\r\n  \"state\": \"Maharashtra\",\r\n  \"country\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELIVERY PERSON REGISTER",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Addu\",\r\n  \"lastName\": \"Ali\",\r\n  \"emailId\": \"addeya@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"phoneNo\": \"1234567891\",\r\n  \"role\": \"Delivery\",\r\n  \"street\": \"Vikhroli\",\r\n  \"landmark\": \"Famous Mall\",\r\n  \"city\": \"Mumbai\",\r\n  \"pincode\": \"123456\",\r\n  \"state\": \"Maharashtra\",\r\n  \"country\": \"India\",\r\n  \"courierId\": 3\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CUSTOMER REGISTER",
+					"protocolProfileBehavior": {
+						"strictSSL": false
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"firstName\": \"Jafer\",\r\n  \"lastName\": \"Ali\",\r\n  \"emailId\": \"jafer@gmail.com\",\r\n  \"password\": \"123456\",\r\n  \"phoneNo\": \"1234567891\",\r\n  \"role\": \"Customer\",\r\n  \"street\": \"Mumbai Cst Road\",\r\n  \"landmark\": \"Famous Mall\",\r\n  \"city\": \"Mumbai\",\r\n  \"pincode\": \"123456\",\r\n  \"state\": \"Maharashtra\",\r\n  \"country\": \"India\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH USERS ROLE-WISE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/fetch/role-wise?role=Courier",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"fetch",
+								"role-wise"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "Courier"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH USER BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/fetch?userId=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"fetch"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH COURIER DELIVERY PERSONS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/fetch/courier/delivery-person?courierId=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"fetch",
+								"courier",
+								"delivery-person"
+							],
+							"query": [
+								{
+									"key": "courierId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE COURIER BY ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/delete/courier?courierId=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"delete",
+								"courier"
+							],
+							"query": [
+								{
+									"key": "courierId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE DELIVERY PERSOn",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/delete/courier/delivery-person?deliveryId=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"delete",
+								"courier",
+								"delivery-person"
+							],
+							"query": [
+								{
+									"key": "deliveryId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "COURIER MODULE",
+			"item": [
+				{
+					"name": "ADD COURIER",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"courierName\": \"Jafer Courier\",\r\n  \"customerRefId\": \"NXOT6\",\r\n  \"courierUserId\": 3,\r\n  \"street\": \"Sonapur\",\r\n  \"landmark\": \"Bhandup Signal\",\r\n  \"city\": \"Mumbai\",\r\n  \"pincode\": \"123456\",\r\n  \"state\": \"Maharashtra\",\r\n  \"country\": \"India\",\r\n  \"receiverName\": \"Manoj\",\r\n  \"courierType\": \"Luggages\",\r\n  \"weight\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/courier/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH COURIER BY ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/courier/fetch?courierId=4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"fetch"
+							],
+							"query": [
+								{
+									"key": "courierId",
+									"value": "4"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ASSIGN DELIVERY PERSON",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4,\r\n  \"deliveryPersonId\": 5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/courier/assign-delivery",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"assign-delivery"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE DELIVERY STATUS",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 4,\r\n  \"deliveryStatus\": \"Out for Delivery\",\r\n  \"deliveryDate\": \"23-11-2023\",\r\n  \"deliveryTime\": \"Evening\",\r\n  \"message\": \"On the way reached to half way\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/courier/update-delivery-status",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"update-delivery-status"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH COURIERS BY COURIER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/courier/fetch/courier-wise?courierId=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"fetch",
+								"courier-wise"
+							],
+							"query": [
+								{
+									"key": "courierId",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH COURIERS BY CUSTOMER",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/courier/fetch/customer-wise?customerId=6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"fetch",
+								"customer-wise"
+							],
+							"query": [
+								{
+									"key": "customerId",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "FETCH COURIERS BY CUSTOMER Copy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/courier/fetch/delivery-wise?deliveryPersonId=5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"courier",
+								"fetch",
+								"delivery-wise"
+							],
+							"query": [
+								{
+									"key": "deliveryPersonId",
+									"value": "5"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
